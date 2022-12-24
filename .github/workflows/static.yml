@@ -1,7 +1,6 @@
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
-env : 
-  process.env.CI : false
+
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -39,7 +38,7 @@ jobs:
         run: npm install
 
       - name: Build 🏗️
-        run: npm run build
+        run: CI='' npm run build
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
