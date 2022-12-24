@@ -1,5 +1,5 @@
 # The Monsters Encyclopedia 👽
->> Project Link : https://nicolas123-coder.github.io/monster-encyclopedia/
+> Project Link : https://nicolas123-coder.github.io/monster-encyclopedia/
 ## A Brief Explanation
 
 ![actions build](https://github.com/Nicolas123-coder/monster-encyclopedia/actions/workflows/CD.yml/badge.svg)
