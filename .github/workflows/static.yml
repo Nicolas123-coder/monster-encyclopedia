@@ -11,7 +11,10 @@ on:
   
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions: read-all
+permissions: 
+  pull-requests: write
+  issues: write
+  repository-projects: write
 
 # Allow one concurrent deployment
 concurrency:
@@ -29,7 +32,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@master
         with:
-          persist-credentials: true
+          persist-credentials: false
           # submodules: true  # TODO remove this if not using submodules in Hexo
 
       - name: Install 🔧
