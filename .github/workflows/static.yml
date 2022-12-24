@@ -35,7 +35,7 @@ jobs:
         uses: actions/configure-pages@v2
 
       - name: test install
-        run: npm run install
+        run: npm install
 
       - name: test build
         run: CI='' npm run build 
